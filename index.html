@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html class="light scroll-smooth" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+    <!-- SEO TAGS & OPEN GRAPH -->
+    <title>Онлайн помощник в сделках с жилой недвижимостью | ПИВОТ БРОКЕР</title>
+    <meta name="description" content="Профессиональные решения для риэлторов и агентств недвижимости по проведению сделок с недвижимостью.">
+    <meta name="keywords" content="сделки с недвижимостью, помощь риэлторам, организация сделок купли-продажи, документы для недвижимости, услуги агентствам недвижимости">
+    
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://pivot.broker">
+        
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="favicon.png">
+        
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pivot.broker/">
+    <meta property="og:title" content="Онлайн помощник в сделках с жилой недвижимостью | ПИВОТ БРОКЕР">
+    <meta property="og:description" content="Профессиональные решения для риэлторов и агентств недвижимости по проведению сделок с недвижимостью.">
+    
+  <!-- HOMEPAGE SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ПИВОТ БРОКЕР",
+  "url": "https://pivot.broker",
+  "description": "Профессиональные решения для риэлторов и агентств недвижимости по проведению сделок с недвижимостью.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "ПИВОТ БРОКЕР",
+    "url": "https://pivot.broker"
+  }
+}
+</script>
+        
+    <!-- Fast Font Loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body {
+            font-family: 'Unbounded', sans-serif !important;
+        }
+        .section-radius {
+            border-radius: 3rem !important;
+        }
+
+        /* FAQ Dropdown Logic */
+        .faq-accordion[open] .faq-chevron {
+            transform: rotate(180deg);
+        }
+        .faq-accordion summary::-webkit-details-marker {
+            display: none;
+        }
+        
+        /* Mobile Menu */
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out;
+            transform: translateY(-110%);
+        }
+        #mobile-menu.active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary/20 selection:text-primary overflow-x-hidden flex flex-col min-h-screen">
+
+    <!-- NAVIGATION BAR -->
+    <div class="block md:hidden mobile-view h-[70px]">
+        <nav class="fixed top-2 left-0 right-0 z-[100] flex justify-between items-center px-5 py-3 max-w-7xl bg-white/90 dark:bg-slate-900/90 backdrop-blur-lg rounded-full shadow-lg mx-auto w-[92%]">
+            <a href="index.html" class="text-[16px] sm:text-xl font-extrabold tracking-tighter text-slate-900 dark:text-slate-50 font-display hover:text-primary transition-colors duration-300">ПИВОТ БРОКЕР</a>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-slate-600 font-bold hover:text-primary font-display tracking-tight !text-[10px]" href="index.html#">ГЛАВНАЯ</a>
+                <a class="text-slate-600 font-bold hover:text-primary font-display tracking-tight !text-[10px]" href="index.html#features-advantages">СЕРВИСЫ</a>
+                <a class="text-slate-600 font-bold hover:text-primary font-display tracking-tight !text-[10px]" href="about.html">О НАС</a>
+                <a class="text-slate-600 font-bold hover:text-primary font-display tracking-tight !text-[10px]" href="index.html#handbook">СПРАВОЧНИК</a>
+            </div>
+            <div class="flex items-center gap-1 sm:gap-2 h-full">
+                <a aria-label="Call us" class="text-slate-600 font-bold hover:text-primary font-display tracking-tight !text-[10px] flex items-center" href="javascript:void(0)" onclick="openModal()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-current !text-[24px] text-primary w-[1em] h-[1em]" aria-hidden="true"><path d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.4-1.2-.6-2.4-.6-3.6 0-.6-.5-1.1-1.1-1.1H4.1C3.5 2.9 3 3.4 3 4c0 9.4 7.6 17 17 17 .6 0 1.1-.5 1.1-1.1v-3.3c0-.6-.5-1.1-1.1-1.1z"/></svg>
+                </a>
+                <button class="flex md:hidden p-2 text-slate-900" id="burger-btn" onclick="toggleMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-current !text-[28px] w-[1em] h-[1em]" aria-hidden="true"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+                </button>
+            </div>
+        </nav>
+        
+        <div class="fixed inset-0 z-[90] bg-white flex flex-col pt-24 px-8 md:hidden transition-transform duration-300 translate-y-[-100%]" id="mobile-menu">
+            <div class="flex flex-col gap-6">
+                <a class="text-xl font-display font-bold text-slate-900 hover:text-primary" href="index.html#" onclick="closeMobileNav()">ГЛАВНАЯ</a>
+                <a class="text-xl font-display font-bold text-slate-900 hover:text-primary" href="index.html#features-advantages" onclick="closeMobileNav()">СЕРВИСЫ</a>
+                <a class="text-xl font-display font-bold text-slate-900 hover:text-primary" href="about.html" onclick="closeMobileNav()">О НАС</a>
+                <a class="text-xl font-display font-bold text-slate-900 hover:text-primary" href="index.html#handbook" onclick="closeMobileNav()">СПРАВОЧНИК</a>
+                <hr class="border-slate-100">
+            </div>
+            <button class="absolute top-6 right-6 p-2 text-slate-900 hover:text-primary" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-current !text-[32px] w-[1em] h-[1em]" aria-hidden="true"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="hidden md:block desktop-view h-[88px]">
+        <nav class="fixed top-4 left-0 right-0 z-50 flex justify-between items-center px-8 py-3 w-[95%] max-w-7xl mx-auto bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-lg rounded-full shadow-xl shadow-slate-200/50 dark:shadow-none no-border">
+            <a href="index.html" class="text-xl font-extrabold tracking-tighter text-slate-900 dark:text-slate-50 font-display flex-1 hover:text-primary transition-colors duration-300">ПИВОТ БРОКЕР</a>
+            <div class="hidden md:flex items-center gap-8 flex-1 justify-center">
+                <a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-orange-300 font-display text-xs tracking-tight hover:scale-105 transition-transform duration-300 ease-out font-bold" href="index.html#">ГЛАВНАЯ</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-orange-300 font-display text-xs tracking-tight hover:scale-105 transition-transform duration-300 ease-out font-bold" href="index.html#features-advantages">СЕРВИСЫ</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-orange-300 font-display text-xs tracking-tight hover:scale-105 transition-transform duration-300 ease-out font-bold" href="about.html">О НАС</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-orange-300 font-display text-xs tracking-tight hover:scale-105 transition-transform duration-300 ease-out font-bold" href="index.html#handbook">СПРАВОЧНИК</a>
+            </div>
+            <div class="flex items-center gap-4 flex-1 justify-end">
+                <button class="hidden lg:flex items-center gap-2 bg-primary text-on-primary rounded-full font-display font-bold text-[10px] hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg shadow-primary/20 w-10 h-10 justify-center" onclick="openModal()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-current text-base w-[1.6em] h-[1.6em]" aria-hidden="true"><path d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.4-1.2-.6-2.4-.6-3.6 0-.6-.5-1.1-1.1-1.1H4.1C3.5 2.9 3 3.4 3 4c0 9.4 7.6 17 17 17 .6 0 1.1-.5 1.1-1.1v-3.3c0-.6-.5-1.1-1.1-1.1z"/></svg>
+                </button>
+            </div>
+        </nav>
+    </div>
+
+    <!-- ========================================== -->
+    <!--         MAIN CONTENT        -->
+    <!-- ========================================== -->
+    <main class="w-full max-w-7xl mx-auto px-4 md:px-6 mt-8 md:mt-12 flex-grow mb-10 space-y-12 md:space-y-16">
+        
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden rounded-[48px] md:section-radius bg-slate-950 text-white shadow-2xl flex flex-col" id="about-us">
+            
+            <!-- Solid Dark Background with subtle gradient & ambient glows -->
+            <div class="absolute inset-0 z-0 bg-slate-950">
+                <div class="absolute inset-0 bg-gradient-to-br from-slate-900 to-slate-950"></div>
+            </div>
+            <div class="absolute -right-24 -top-24 w-96 h-96 bg-primary/15 rounded-full blur-3xl pointer-events-none z-0"></div>
+            <div class="absolute -left-20 -bottom-20 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none z-0"></div>
+            
+            <div class="relative z-10 w-full px-6 md:px-8 lg:px-16 pt-12 lg:pt-16 pb-12 lg:pb-16 mx-auto max-w-7xl">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+                    
+                    <!-- LEFT COLUMN (Text) -->
+                    <div class="lg:col-span-6 flex flex-col w-full text-center lg:text-left justify-center">
+                        <h1 class="text-xl md:text-2xl lg:text-[28px] xl:text-[32px] font-display font-black tracking-tighter leading-[1.15] lg:leading-tight uppercase">
+                            <span class="text-primary block">ОНЛАЙН ПОМОЩНИК</span>
+                            <span class="text-white block">В СДЕЛКАХ С ЖИЛОЙ НЕДВИЖИМОСТЬЮ</span>
+                        </h1>
+                        <p class="text-slate-400 font-medium text-[11px] md:text-sm mt-4 lg:mt-6 leading-relaxed font-brand max-w-xl mx-auto lg:mx-0">
+                            Помогаем риэлторам и агентствам недвижимости экономить время и работать более эффективно. Предлагаем простые решения для автоматизации процесса купли-продажи недвижимости.
+                        </p>
+                    </div>
+        
+                    <!-- RIGHT COLUMN (Accordions) -->
+                    <div class="lg:col-span-6 flex flex-col gap-4 w-full mt-6 lg:mt-0 justify-center">
+                        <!-- Dropdown 1 -->
+                        <details class="faq-accordion bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl overflow-hidden transition-all duration-300 lg:hover:bg-white/[0.08] w-full">
+                            <summary class="flex items-center justify-between p-5 lg:p-6 cursor-pointer list-none select-none">
+                                <span class="text-white font-display font-bold text-[11px] lg:text-[13px] tracking-tight uppercase leading-snug">
+                                    ДЛЯ НАЧИНАЮЩИХ СПЕЦИАЛИСТОВ:
+                                </span>
+                                <!-- Inline SVG: expand_more -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-[1em] h-[1em] fill-current text-primary text-2xl transition-transform duration-300 faq-chevron ml-2 shrink-0" aria-hidden="true"><path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+                            </summary>
+                            <div class="pb-5 px-5 lg:px-6">
+                                <ul class="space-y-3 lg:space-y-4 border-t border-white/10 pt-4">
+                                    <li class="flex items-start gap-3 text-slate-300 text-[11px] lg:text-[12px] leading-snug"><span class="text-primary font-bold">•</span>защита получения комиссии</li>
+                                    <li class="flex items-start gap-3 text-slate-300 text-[11px] lg:text-[12px] leading-snug"><span class="text-primary font-bold">•</span>уверенность перед клиентом</li>
+                                    <li class="flex items-start gap-3 text-slate-300 text-[11px] lg:text-[12px] leading-snug"><span class="text-primary font-bold">•</span>старт без ошибок</li>
+                                    <li class="flex items-start gap-3 text-slate-300 text-[11px] lg:text-[12px] leading-snug"><span class="text-primary font-bold">•</span>экономия бюджета</li>
+                                </ul>
+                            </div>
+                        </details>
+                        
+                        <!-- Dropdown 2 -->
+                        <details class="faq-accordion bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl overflow-hidden transition-all duration-300 lg:hover:bg-white/[0.08] w-full">
+                            <summary class="flex items-center justify-between p-5 lg:p-6 cursor-pointer list-none select-none">
+                                <span class="text-white font-display font-bold text-[11px] lg:text-[13px] tracking-tight uppercase leading-snug">
+                                    ДЛЯ ОПЫТНЫХ СПЕЦИАЛИСТОВ:
+                                </span>
+                                <!-- Inline SVG: expand_more -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-[1em] h-[1em] fill-current text-primary text-2xl transition-transform duration-300 faq-chevron ml-2 shrink-0" aria-hidden="true"><path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+                            </summary>
+                            <div class="pb-5 px-5 lg:px-6">
+                                <ul class="space-y-3 lg:space-y-4 border-t border-white/10 pt-4">
+                                    <li class="flex items-start gap-3 text-slate-300 text-[11px] lg:text-[12px] leading-snug"><span class="text-primary font-bold">•</span>делегирование рутины, освободите время для показов и переговоров</li>
+                                    <li class="flex items-start gap-3 text-slate-300 text-[11px] lg:text-[12px] leading-snug"><span class="text-primary font-bold">•</span>выгоднее, чем разовое привлечение специалистов на аутсорсинге</li>
+                                    <li class="flex items-start gap-3 text-slate-300 text-[11px] lg:text-[12px] leading-snug"><span class="text-primary font-bold">•</span>информационно-справочные отчеты для клиентов</li>
+                                    <li class="flex items-start gap-3 text-slate-300 text-[11px] lg:text-[12px] leading-snug"><span class="text-primary font-bold">•</span>дистанционно и оперативно</li>
+                                </ul>
+                            </div>
+                        </details>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <!-- Features & Advantages Section -->
+        <section class="space-y-4 scroll-mt-24 px-0" id="features-advantages">
+            <div class="space-y-4">
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-2 md:gap-4 px-2">
+                    <div class="space-y-2">
+                        <h2 class="text-xl md:text-4xl font-display font-extrabold tracking-tighter uppercase text-slate-950 dark:text-white">НАШИ УСЛУГИ</h2>
+                    </div>
+                    <p class="text-xs text-on-surface-variant font-medium max-w-sm">Все необходимое для быстрых и прозрачных сделок с недвижимостью.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-4 font-body">
+                    
+                    <!-- Card 1: Documents sales and purchase (Has Hover & Link) -->
+                    <a href="service-documents-sale.html" class="md:col-span-7 relative overflow-hidden bg-slate-900/90 border border-white/10 section-radius p-8 flex flex-col justify-start shadow-lg group hover:border-primary/40 hover:bg-slate-950 transition-all duration-500 cursor-pointer">
+                        <div class="relative z-10">
+                            <div class="flex items-center justify-start mb-6"><span class="text-white/20 font-display font-extrabold text-4xl group-hover:text-primary/40 transition-colors">01</span></div>
+                            <h3 class="text-base md:text-lg font-display font-extrabold text-white uppercase tracking-tight mb-2 group-hover:text-primary transition-colors">Документы для сделок</h3>
+                            <p class="text-xs text-slate-400 font-medium leading-relaxed max-w-xl">Составление опытными юристами всех необходимых документов от ПДКП или соглашения о задатке до акта приема-передачи объекта, с учетом индивидуальных запросов.</p>
+                        </div>
+                        <!-- Tags & Hover Details -->
+                        <div class="relative z-10 mt-6 flex justify-between items-center w-full">
+                            <div class="flex flex-wrap items-center gap-2">
+                                <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] text-slate-300 font-medium group-hover:border-primary/30 transition-colors">Вторичка или новостройки</span>
+                                <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] text-slate-300 font-medium group-hover:border-primary/30 transition-colors">Любые формы расчетов</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 text-primary text-[10px] md:text-xs font-bold tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-[-10px] group-hover:translate-x-0 hidden md:flex">
+                                ПОДРОБНЕЕ 
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-current w-[1.2em] h-[1.2em]" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 2: KYC AML (Has Hover & Link) -->
+                    <a href="service-kyc-check.html" class="md:col-span-5 relative overflow-hidden bg-slate-900/90 border border-white/10 section-radius p-8 flex flex-col justify-start shadow-lg group hover:border-primary/40 hover:bg-slate-950 transition-all duration-500 cursor-pointer">
+                        <div class="absolute -left-10 -bottom-10 w-48 h-48 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
+                        <div class="relative z-10">
+                            <div class="flex items-center justify-start mb-6"><span class="text-white/20 font-display font-extrabold text-4xl group-hover:text-primary/40 transition-colors">02</span></div>
+                            <h3 class="text-base md:text-lg font-display font-extrabold text-white uppercase tracking-tight mb-2 group-hover:text-primary transition-colors">Дью-дилидженс и&nbsp;проверки</h3>
+                            <p class="text-xs text-slate-400 font-medium leading-relaxed">Первичные или углубленные проверки, позволяющие на&nbsp;раннем этапе выявить потенциальные риски объекта или другой стороны по сделке.</p>
+                        </div>
+                        <!-- Tags & Hover Details -->
+                        <div class="relative z-10 mt-6 flex justify-between items-center w-full">
+                            <div class="flex flex-wrap items-center gap-2">
+                                <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] text-slate-300 font-medium group-hover:border-primary/30 transition-colors">Должная осмотрительность</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 text-primary text-[10px] md:text-xs font-bold tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-[-10px] group-hover:translate-x-0 hidden md:flex">
+                                ПОДРОБНЕЕ 
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-current w-[1.2em] h-[1.2em]" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 3: Documents for agents (Static) -->
+                    <div class="md:col-span-4 relative overflow-hidden bg-slate-900/90 border border-white/10 section-radius p-7 flex flex-col justify-between shadow-lg transition-all duration-500">
+                        <div>
+                            <div class="flex items-center justify-start mb-5">
+                                <span class="text-white/20 font-display font-extrabold text-3xl">03</span>
+                            </div>
+                            <h3 class="text-base font-display font-extrabold text-white uppercase tracking-tight mb-2">Агентские документы</h3>
+                            <p class="text-xs text-slate-400 font-medium leading-relaxed">Создаем индивидуально под ваши цели договоры (агентского типа / оказания услуг), позволяющие эффективно работать с&nbsp;клиентами.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Power of Attorney (Static) -->
+                    <div class="md:col-span-4 relative overflow-hidden bg-slate-900/90 border border-white/10 section-radius p-7 flex flex-col justify-between shadow-lg transition-all duration-500">
+                        <div>
+                            <div class="flex items-center justify-start mb-5">
+                                <span class="text-white/20 font-display font-extrabold text-3xl">04</span>
+                            </div>
+                            <h3 class="text-base font-display font-extrabold text-white uppercase tracking-tight mb-2">Сопровождение сделок</h3>
+                            <p class="text-xs text-slate-400 font-medium leading-relaxed">Полное сопровождение вашего проекта от&nbsp;первичных проверок до проведения расчетов в банке, все этапы под&nbsp;контролем опытных специалистов.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 & 6 (Stacked, Static) -->
+                    <div class="md:col-span-4 flex flex-col gap-4">
+                        <!-- Card 5: Banking Advisory -->
+                        <div class="flex-1 relative overflow-hidden bg-slate-900/90 border border-white/10 section-radius p-6 flex flex-col justify-center shadow-lg transition-all duration-500">
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 shrink-0 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary transition-all duration-300">
+                                    <!-- Inline SVG: verified_user -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-[1em] h-[1em] fill-current text-xl" aria-hidden="true"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 19.93V2.94l7 3.11v4.95c0 4.54-2.8 8.85-7 10.93zM16.5 9.5l-6 6-3.5-3.5 1.41-1.41L10.5 12.67l4.59-4.58z"/></svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-sm font-display font-extrabold text-white uppercase tracking-tight mb-1">Структурирование сделок</h3>
+                                    <p class="text-[11px] text-slate-400 font-medium leading-relaxed">Проводим комплексный анализ и&nbsp;выбираем эффективную страгегию действий.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 6: Direct Chat -->
+                        <div class="flex-1 relative overflow-hidden bg-slate-900/90 border border-white/10 section-radius p-6 flex flex-col justify-center shadow-lg transition-all duration-500">
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 shrink-0 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary transition-all duration-300">
+                                    <!-- Inline SVG: schedule -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-[1em] h-[1em] fill-current text-xl" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                                </div>
+                                <div>
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <h3 class="text-sm font-display font-extrabold text-white uppercase tracking-tight">Онлайн чат поддержки</h3>
+                                        <span class="px-1.5 py-0.5 rounded bg-primary/20 text-primary text-[9px] font-extrabold uppercase">LIVE</span>
+                                    </div>
+                                    <p class="text-[11px] text-slate-400 font-medium leading-relaxed">Решаем сложные вопросы в онлайн формате, всегда оставаясь на связи.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Pricing Section -->
+        <section class="scroll-mt-24 px-0" id="pricing-tiers">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-4 font-body">
+                
+                <div class="md:col-span-7 flex flex-col justify-center px-2">
+                    <h2 class="text-2xl md:text-4xl lg:text-5xl font-display font-black tracking-tighter uppercase text-slate-950 dark:text-white">
+                        ПАКЕТНОЕ ПРЕДЛОЖЕНИЕ
+                    </h2>
+                    <p class="text-xs lg:text-sm text-on-surface-variant font-display font-medium mt-2 md:mt-4 max-w-sm uppercase tracking-widest">
+                        все необходимое в одном месте
+                    </p>
+                </div>
+
+                <div class="md:col-span-5 bg-slate-950 section-radius p-8 md:p-10 flex flex-col h-full shadow-2xl transition-all duration-500 relative group">
+                    <div class="mb-6 md:mb-8">
+                        <span class="text-primary font-black text-[10px] md:text-xs tracking-[0.2em] uppercase">По системе депозита</span>
+                        <div class="text-xl md:text-2xl font-display font-black mt-1 md:mt-2 uppercase text-white">Конструктор</div>
+                    </div>
+                    <ul class="space-y-4 mb-8 md:mb-12 flex-1">
+                        <li class="flex items-start gap-3 text-slate-300 text-[10px] md:text-xs font-bold uppercase tracking-tight">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-[1em] h-[1em] fill-current text-primary text-xl shrink-0 mt-0.5" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg>
+                            <span class="leading-relaxed">любой набор услуг</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-300 text-[10px] md:text-xs font-bold uppercase tracking-tight">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-[1em] h-[1em] fill-current text-primary text-xl shrink-0 mt-0.5" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg>
+                            <span class="leading-relaxed">информационно-справочные отчеты</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-300 text-[10px] md:text-xs font-bold uppercase tracking-tight">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-[1em] h-[1em] fill-current text-primary text-xl shrink-0 mt-0.5" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg>
+                            <span class="leading-relaxed">бесплатные корректировки</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-300 text-[10px] md:text-xs font-bold uppercase tracking-tight">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-[1em] h-[1em] fill-current text-primary text-xl shrink-0 mt-0.5" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg>
+                            <span class="leading-relaxed">приоритетное обслуживание</span>
+                        </li>
+                    </ul>
+                    <button class="w-full py-4 bg-primary text-white rounded-full font-display font-bold text-[10px] uppercase tracking-widest hover:scale-105 active:scale-95 shadow-lg shadow-primary/30 transition-all duration-300" onclick="openModal()">
+    <span class="text-xs md:text-sm font-black">Узнать цену</span>
+					</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Knowledge Hub Section -->
+        <section class="relative z-10 scroll-mt-24 px-0" id="handbook">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-2 md:gap-4 px-2 mb-4">
+                <div class="space-y-2">
+                    <h2 class="text-xl md:text-4xl font-display font-extrabold tracking-tighter uppercase text-slate-950 dark:text-white">
+                        ПОЛЕЗНАЯ ИНФОРМАЦИЯ
+                    </h2>
+                </div>
+                <p class="text-xs text-on-surface-variant font-medium max-w-sm">
+                    Ключевые аспекты рынка и советы экспертов
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
+                
+                <a class="group bg-white p-8 md:p-10 rounded-[3rem] border border-slate-100 shadow-sm hover:shadow-xl hover:border-primary/20 transition-all duration-500 flex flex-col cursor-pointer relative" href="article-sale-taxes.html">
+                    <div class="mb-4 md:mb-6 w-10 h-10 md:w-12 h-12 bg-primary/10 rounded-full md:rounded-2xl flex items-center justify-center group-hover:bg-primary transition-colors duration-500">
+                        <!-- Inline SVG: description -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 fill-current text-primary group-hover:text-white transition-colors" aria-hidden="true"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                    </div>
+                    <h4 class="font-display font-extrabold text-[14px] md:text-lg mb-2 uppercase text-on-background group-hover:text-primary md:line-clamp-2 transition-colors duration-300">Налоги с продажи недвижимости</h4>
+                    <p class="text-[9px] md:text-xs text-on-surface-variant font-display font-medium leading-relaxed uppercase tracking-widest md:tracking-normal md:normal-case mt-auto group-hover:pr-16 transition-all duration-500 ease-out">Сравнили условия налогообложения сделок купли-продажи недвижимости для резидентов и нерезидентов РФ.</p>
+                    <div class="absolute bottom-8 md:bottom-10 right-8 md:right-10 flex items-center gap-1.5 text-primary text-[10px] md:text-xs font-bold tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-[-10px] group-hover:translate-x-0 bg-white shadow-[-8px_0_12px_white] pl-2">
+                        ПОДРОБНЕЕ 
+                        <!-- Inline SVG: arrow_forward -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-[1.2em] h-[1.2em] fill-current" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                    </div>
+                </a>
+                
+                <a class="group bg-white p-8 md:p-10 rounded-[3rem] border border-slate-100 shadow-sm hover:shadow-xl hover:border-primary/20 transition-all duration-500 flex flex-col cursor-pointer relative" href="article-transfer-act.html">
+                    <div class="mb-4 md:mb-6 w-10 h-10 md:w-12 h-12 bg-primary/10 rounded-full md:rounded-2xl flex items-center justify-center group-hover:bg-primary transition-colors duration-500">
+                        <!-- Inline SVG: payments -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 fill-current text-primary group-hover:text-white transition-colors" aria-hidden="true"><path d="M19 14V6c0-1.1-.9-2-2-2H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zm-2 0H3V6h14v8zm-7-7c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3zm13 0v11c0 1.1-.9 2-2 2H4v-2h17V7h2z"/></svg>
+                    </div>
+                    <h4 class="font-display font-extrabold text-[14px] md:text-lg mb-2 uppercase text-on-background group-hover:text-primary md:line-clamp-2 transition-colors duration-300">Акт приема-передачи</h4>
+                    <p class="text-[9px] md:text-xs text-on-surface-variant font-display font-medium leading-relaxed uppercase tracking-widest md:tracking-normal md:normal-case mt-auto group-hover:pr-16 transition-all duration-500 ease-out">Рассмотрели три важные функции документа и рассказали, почему им&nbsp;не&nbsp;следует пренебрегать.</p>
+                    <div class="absolute bottom-8 md:bottom-10 right-8 md:right-10 flex items-center gap-1.5 text-primary text-[10px] md:text-xs font-bold tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-[-10px] group-hover:translate-x-0 bg-white shadow-[-8px_0_12px_white] pl-2">
+                        ПОДРОБНЕЕ 
+                        <!-- Inline SVG: arrow_forward -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-[1.2em] h-[1.2em] fill-current" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                    </div>
+                </a>
+                
+                <div class="bg-white p-8 md:p-10 rounded-[3rem] border border-slate-100 shadow-sm flex flex-col">
+                    <div class="mb-4 md:mb-6 w-10 h-10 md:w-12 h-12 bg-primary/10 rounded-full md:rounded-2xl flex items-center justify-center">
+                        <!-- Inline SVG: add -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 fill-current text-primary" aria-hidden="true"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                    </div>
+                    <h4 class="font-display font-extrabold text-[14px] md:text-lg mb-2 uppercase text-on-background md:line-clamp-2">Читать еще...</h4>
+                    <p class="text-[9px] md:text-xs text-on-surface-variant font-display font-medium leading-relaxed uppercase tracking-widest md:tracking-normal md:normal-case mt-auto transition-all duration-500 ease-out">Здесь будут появляться новые материалы.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Unified Footer -->
+    <footer class="w-full border-t border-slate-200 md:border-outline-variant/15 mt-auto bg-background-light md:bg-transparent">
+        <div class="flex flex-col md:flex-row justify-between items-center px-6 md:px-8 py-8 md:py-6 w-full max-w-[1920px] mx-auto gap-4 md:gap-0">
+            <div class="text-[9px] md:text-[10px] tracking-[0.2em] md:tracking-widest uppercase font-bold text-slate-400 md:text-on-surface-variant/60 font-display md:font-label text-center md:text-left">
+                <span class="block">© ПИВОТ БРОКЕР</span>
+                <span class="block mt-1">ИНФОРМАЦИЯ ИНФОРМАЦИОННО-СПРАВОЧНОГО ХАРАКТЕРА, НЕ ЯВЛЯЕТСЯ ПУБЛИЧНОЙ ОФЕРТОЙ.</span>
+            </div>
+            <div class="flex items-center gap-6 md:gap-8 mt-2 md:mt-0">
+                <a class="text-[9px] md:text-[10px] tracking-[0.2em] md:tracking-widest uppercase font-bold text-slate-400 md:text-on-surface-variant/60 hover:text-primary transition-colors font-display md:font-label" href="about.html">О НАС</a>
+                <a class="text-[9px] md:text-[10px] tracking-[0.2em] md:tracking-widest uppercase font-bold text-slate-400 md:text-on-surface-variant/60 hover:text-primary transition-colors font-display md:font-label" href="#">КОНТАКТЫ</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Unified Contact Modal -->
+    <div class="fixed inset-0 z-[200] items-center justify-center p-4 hidden" id="contact-modal">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-white/10 md:bg-slate-950/60 backdrop-blur-md" onclick="closeModal()"></div>
+        
+        <!-- Modal Card -->
+        <div class="relative z-10 w-full max-w-sm md:max-w-[320px] bg-white/90 md:bg-slate-950 backdrop-blur-lg md:backdrop-blur-none text-slate-900 md:text-white p-8 md:p-6 rounded-[48px] md:rounded-[3rem] shadow-2xl border border-white/20 md:border-white/10 text-center">
+            
+            <button class="absolute top-4 right-4 text-slate-400 hover:text-primary md:hover:text-white transition-colors z-20" onclick="closeModal()">
+                <!-- Inline SVG: close -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-[1em] h-[1em] fill-current text-2xl" aria-hidden="true"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+            </button>
+            
+            <div class="space-y-6 md:space-y-8 mt-4">
+                <div class="flex flex-col gap-4 w-full">
+                    <a class="flex items-center justify-center gap-3 md:gap-4 p-4 md:py-4 bg-slate-900 md:bg-white/10 md:hover:bg-white/20 text-white rounded-full font-display font-bold text-xs md:text-sm uppercase tracking-widest shadow-lg md:shadow-none active:scale-95 md:active:scale-100 md:transition-all w-full" href="https://telegram.me/PIVOTBROKER" target="_blank" rel="noopener noreferrer">
+                        <!-- Inline SVG: send -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-[1em] h-[1em] fill-current text-lg" aria-hidden="true"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                        Telegram
+                    </a>
+                    <a class="flex items-center justify-center gap-3 md:gap-4 p-4 md:py-4 bg-primary text-white rounded-full font-display font-bold text-xs md:text-sm uppercase tracking-widest shadow-lg md:shadow-none active:scale-95 md:active:scale-100 md:hover:scale-105 md:transition-transform w-full" href="mailto:pivot@broker">
+                        <!-- Inline SVG: mail -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-[1em] h-[1em] fill-current text-lg" aria-hidden="true"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
+                        pivot@global
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT SECTION -->
+    <script>
+
+    // Single-open accordion logic for natively standard <details> elements
+    document.querySelectorAll('.faq-accordion').forEach((el) => {
+        el.addEventListener('toggle', (e) => {
+            if (el.open) {
+                document.querySelectorAll('.faq-accordion').forEach((other) => {
+                    if (other !== el) other.removeAttribute('open');
+                });
+            }
+        });
+    });
+
+    function toggleMenu() {
+        const mobileMenu = document.getElementById('mobile-menu');
+        if(mobileMenu) {
+            mobileMenu.classList.toggle('active');
+            document.body.classList.toggle('overflow-hidden');
+        }
+    }
+    
+    function closeMobileNav() {
+        const mobileMenu = document.getElementById('mobile-menu');
+        if(mobileMenu) {
+            mobileMenu.classList.remove('active');
+            document.body.classList.remove('overflow-hidden'); 
+            setTimeout(scrollToHash, 100); 
+        }
+    }
+
+    function scrollToHash() {
+        if (!window.location.hash) return;
+        
+        let targetId = window.location.hash;
+        
+        if (targetId.includes('-mobile') || targetId.includes('-desktop')) {
+            targetId = targetId.replace('-mobile', '').replace('-desktop', '');
+            history.replaceState(null, null, targetId);
+        }
+
+        let targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+    window.addEventListener('hashchange', scrollToHash);
+
+    function openModal() {
+        const modal = document.getElementById('contact-modal');
+        if(modal) {
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.classList.add('overflow-hidden');
+        }
+    }
+    
+    function closeModal() {
+        const modal = document.getElementById('contact-modal');
+        if(modal) {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.classList.remove('overflow-hidden');
+        }
+    }
+
+    function openMobileModal() {
+        openModal();
+    }
+    
+    function openDesktopModal() {
+        openModal();
+    }
+
+    // Netlify AJAX Form Submission with Checkmark Feedback
+    const form = document.getElementById('consultation-form');
+    
+    if(form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault(); // Stop the page from reloading
+            
+            const btn = document.getElementById('submit-btn');
+            const btnText = document.getElementById('btn-text');
+            const btnIcon = document.getElementById('btn-icon');
+            
+            // 1. Change button to loading state
+            btn.disabled = true;
+            btnText.innerText = "ОТПРАВЛЯЕМ...";
+            btnIcon.classList.add('hidden');
+
+            // 2. Package the data for Netlify
+            const formData = new FormData(form);
+
+            // 3. Send data quietly in the background
+            fetch('/', {
+                method: 'POST',
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams(formData).toString()
+            })
+            .then(() => {
+                // 4. On Success: Hide form & header, Show Checkmark
+                document.getElementById('form-header').style.opacity = '0';
+                form.style.opacity = '0';
+                
+                setTimeout(() => {
+                    form.style.visibility = 'hidden';
+                    document.getElementById('form-header').style.visibility = 'hidden';
+                    
+                    const successMsg = document.getElementById('success-message');
+                    successMsg.classList.remove('pointer-events-none');
+                    successMsg.style.opacity = '1';
+                }, 300);
+            })
+            .catch((error) => {
+                // On Error: Revert button so they can try again
+                alert('Ошибка соединения. Пожалуйста, попробуйте еще раз.');
+                btn.disabled = false;
+                btnText.innerText = "ОТПРАВИТЬ";
+                btnIcon.classList.remove('hidden');
+            });
+        });
+    }
+    </script>
+</body>
+</html>

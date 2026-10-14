@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html class="light scroll-smooth" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+    <!-- SEO ТЕГИ & OPEN GRAPH -->
+    <title>О нас | Помощник в сделках с недвижимостью | ПИВОТ БРОКЕР</title>
+    <meta name="description" content="ПРЕДОСТАВЛЯЕМ ОНЛАЙН УСУЛГИ ДЛЯ АГЕНСТВ НЕДВИЖИМОСТИ И РИЭЛТОРОВ ПО СОПРОВОЖДЕНИЯ СДЕЛОК С НЕДВИЖИМОСТЬЮ.">
+    
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://pivot.broker/about">
+    
+    <!-- FAVICON --> 
+    <link rel="icon" type="image/png" href="favicon.png">
+        
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pivot.broker/about">
+    <meta property="og:title" content="О нас | ПИВОТ БРОКЕР">
+    <meta property="og:description" content="ПРЕДОСТАВЛЯЕМ ОНЛАЙН УСУЛГИ ДЛЯ АГЕНСТВ НЕДВИЖИМОСТИ И РИЭЛТОРОВ ПО СОПРОВОЖДЕНИЯ СДЕЛОК С НЕДВИЖИМОСТЬЮ.">
+    
+    <!-- Fast Font Loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body {
+            font-family: 'Unbounded', sans-serif !important;
+        }
+        .section-radius {
+            border-radius: 3rem !important;
+        }
+        
+        /* --- Mobile Menu Styles --- */
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out;
+            transform: translateY(-110%);
+        }
+        #mobile-menu.active {
+            transform: translateY(0);
+        }
+    </style>
+
+    <!-- ABOUT PAGE SCHEMA -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "url": "https://pivot.broker/about",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "ПИВОТ БРОКЕР",
+    "url": "https://pivot.broker",
+    "description": "Предоставляем онлайн-услуги для агентств недвижимости и риэлторов по сопровождению сделок с недвижимостью."
+  }
+}
+</script>
+
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary/20 selection:text-primary overflow-x-hidden flex flex-col min-h-screen">
+
+    <!-- INSTANT LOADING NAVIGATION BAR -->
+    <div class="block md:hidden mobile-view h-[70px]">
+        <nav class="fixed top-2 left-0 right-0 z-[100] flex justify-between items-center px-5 py-3 max-w-7xl bg-white/90 dark:bg-slate-900/90 backdrop-blur-lg rounded-full shadow-lg mx-auto w-[92%]">
+            <a href="index.html" class="text-[16px] sm:text-xl font-extrabold tracking-tighter text-slate-900 dark:text-slate-50 font-display hover:text-primary transition-colors duration-300">ПИВОТ БРОКЕР</a>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-slate-600 font-bold hover:text-primary font-display tracking-tight !text-[10px]" href="index.html#">ГЛАВНАЯ</a>
+                <a class="text-slate-600 font-bold hover:text-primary font-display tracking-tight !text-[10px]" href="index.html#features-advantages">СЕРВИСЫ</a>
+                <a class="text-slate-600 font-bold hover:text-primary font-display tracking-tight !text-[10px]" href="about.html">О НАС</a>
+                <a class="text-slate-600 font-bold hover:text-primary font-display tracking-tight !text-[10px]" href="index.html#handbook">СПРАВОЧНИК</a>
+            </div>
+            <div class="flex items-center gap-1 sm:gap-2 h-full">
+                <a aria-label="Связаться с нами" class="text-slate-600 font-bold hover:text-primary font-display tracking-tight !text-[10px] flex items-center" href="javascript:void(0)" onclick="openModal()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-current !text-[24px] text-primary w-[1em] h-[1em]" aria-hidden="true"><path d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.4-1.2-.6-2.4-.6-3.6 0-.6-.5-1.1-1.1-1.1H4.1C3.5 2.9 3 3.4 3 4c0 9.4 7.6 17 17 17 .6 0 1.1-.5 1.1-1.1v-3.3c0-.6-.5-1.1-1.1-1.1z"/></svg>
+                </a>
+                <button class="flex md:hidden p-2 text-slate-900" id="burger-btn" onclick="toggleMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-current !text-[28px] w-[1em] h-[1em]" aria-hidden="true"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+                </button>
+            </div>
+        </nav>
+        
+        <div class="fixed inset-0 z-[90] bg-white flex flex-col pt-24 px-8 md:hidden transition-transform duration-300 translate-y-[-100%]" id="mobile-menu">
+            <div class="flex flex-col gap-6">
+                <a class="text-xl font-display font-bold text-slate-900 hover:text-primary" href="index.html#" onclick="closeMobileNav()">ГЛАВНАЯ</a>
+                <a class="text-xl font-display font-bold text-slate-900 hover:text-primary" href="index.html#features-advantages" onclick="closeMobileNav()">СЕРВИСЫ</a>
+                <a class="text-xl font-display font-bold text-slate-900 hover:text-primary" href="about.html" onclick="closeMobileNav()">О НАС</a>
+                <a class="text-xl font-display font-bold text-slate-900 hover:text-primary" href="index.html#handbook" onclick="closeMobileNav()">СПРАВОЧНИК</a>
+                <hr class="border-slate-100">
+            </div>
+            <button class="absolute top-6 right-6 p-2 text-slate-900 hover:text-primary" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-current !text-[32px] w-[1em] h-[1em]" aria-hidden="true"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="hidden md:block desktop-view h-[88px]">
+        <nav class="fixed top-4 left-0 right-0 z-50 flex justify-between items-center px-8 py-3 w-[95%] max-w-7xl mx-auto bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-lg rounded-full shadow-xl shadow-slate-200/50 dark:shadow-none no-border">
+            <a href="index.html" class="text-xl font-extrabold tracking-tighter text-slate-900 dark:text-slate-50 font-display flex-1 hover:text-primary transition-colors duration-300">ПИВОТ БРОКЕР</a>
+            <div class="hidden md:flex items-center gap-8 flex-1 justify-center">
+                <a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-orange-300 font-display text-xs tracking-tight hover:scale-105 transition-transform duration-300 ease-out font-bold" href="index.html#">ГЛАВНАЯ</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-orange-300 font-display text-xs tracking-tight hover:scale-105 transition-transform duration-300 ease-out font-bold" href="index.html#features-advantages">СЕРВИСЫ</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-orange-300 font-display text-xs tracking-tight hover:scale-105 transition-transform duration-300 ease-out font-bold" href="about.html">О НАС</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-orange-300 font-display text-xs tracking-tight hover:scale-105 transition-transform duration-300 ease-out font-bold" href="index.html#handbook">СПРАВОЧНИК</a>
+            </div>
+            <div class="flex items-center gap-4 flex-1 justify-end">
+                <button class="hidden lg:flex items-center gap-2 bg-primary text-on-primary rounded-full font-display font-bold text-[10px] hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg shadow-primary/20 w-10 h-10 justify-center" onclick="openModal()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-current text-base w-[1.6em] h-[1.6em]" aria-hidden="true"><path d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.4-1.2-.6-2.4-.6-3.6 0-.6-.5-1.1-1.1-1.1H4.1C3.5 2.9 3 3.4 3 4c0 9.4 7.6 17 17 17 .6 0 1.1-.5 1.1-1.1v-3.3c0-.6-.5-1.1-1.1-1.1z"/></svg>
+                </button>
+            </div>
+        </nav>
+    </div>
+
+    <main class="w-full max-w-7xl mx-auto px-4 md:px-6 mt-8 md:mt-12 flex-grow mb-10">
+        
+        <!-- Единая огромная черная секция, объединяющая Hero и Метрики -->
+        <section class="relative overflow-hidden section-radius bg-slate-950 text-white px-6 md:px-8 lg:px-16 py-12 lg:py-16 shadow-2xl w-full border border-white/10">
+            
+            <!-- Background Images & Blurs -->
+            <div class="absolute inset-0 z-0 overflow-hidden">
+                <img alt="Фон города" fetchpriority="high" class="w-full h-full object-cover opacity-10 md:opacity-15 grayscale md:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0ugRnUqz6O0Cm5y6NjLKOi4LaZtwSleEHORiImKYRyYUuGmHzxyYNmxP5X8pIx7E9_NejuWSvHzq_yx1I_QNdDCIzQ-SyNWlReu6VMaB6X_fde3FgzC97ELFRxOBUaJ0gpZGaBfIT6Byp1OOaQTE-vUJS07v-wyXYk6Tz7NrLVhluoIm5nK9HlquhN5gagM6bPukbc0DXtcpouUXEqePWVO99qujhah_eBXfaAsHTvRCqK5cOMieT4a1QKnDZjOlVxDxb-mySIUHPu4">
+                <div class="absolute inset-0 bg-gradient-to-tr from-slate-950 via-slate-950/90 to-slate-900/40"></div>
+            </div>
+            <div class="absolute -right-24 -top-24 w-96 h-96 bg-primary/15 rounded-full blur-3xl pointer-events-none z-0"></div>
+            <div class="absolute -left-20 -bottom-20 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none z-0"></div>
+            
+            <div class="relative z-10 md:max-w-6xl md:mx-auto md:px-0">
+                
+                <!-- ВЕРХНЯЯ ЧАСТЬ: Bridging International Capital -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start mb-12 lg:mb-16">
+                  
+                    <!-- Левая колонка -->
+                    <div class="lg:col-span-7 text-left flex flex-col items-start">
+                        <h1 class="font-display text-[17px] sm:text-xl lg:text-[28px] font-extrabold tracking-tight leading-[1.25] mb-6 text-white uppercase">
+                            Сервис для упрощения проведения сделок с&nbsp;недвижимостью
+                        </h1>
+                        <div class="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed font-medium font-brand">
+                            <h2>ПИВОТ БРОКЕР — это онлайн консалтинг компания, которая помогает риэлторам и агентствам недвижимости работать быстро, прозрачно и безопасно. Наша экспертиза включает широкий набор услуг: от первичного аудита до финальных расчетов и&nbsp;государственной регистрации и строится на&nbsp;глубоком понимании рынка.</h2>
+                        </div>
+                    </div>
+                  
+                    <!-- Правая колонка -->
+                    <div class="lg:col-span-5 flex flex-col gap-4 font-brand mt-4 lg:mt-0">
+                        
+                        <div class="bg-white/5 border border-white/10 rounded-2xl p-5 md:p-6 backdrop-blur-md shadow-xl">
+                            <div class="mb-1.5 text-left">
+                                <span class="text-[11px] font-display font-bold uppercase tracking-widest text-white">Специализация</span>
+                            </div>
+                            <div class="text-xs sm:text-sm font-semibold text-white leading-snug text-left">Консалтинговые и информационные услуги для&nbsp;профессиональными участниками рынка недвижимости</div>
+                        </div>
+                        
+                        <div class="bg-white/5 border border-white/10 rounded-2xl p-5 md:p-6 backdrop-blur-md shadow-xl">
+                            <div class="mb-1.5 text-left">
+                                <span class="text-[11px] font-display font-bold uppercase tracking-widest text-white">Наша цель</span>
+                            </div>
+                            <div class="text-xs sm:text-sm font-semibold text-white leading-snug text-left">Минимизировать рутину и автоматизировать процессы</div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Верхний разделитель -->
+                <div class="h-[1px] w-full bg-white/10 mb-12 lg:mb-16"></div>
+
+                <!-- СРЕДНЯЯ ЧАСТЬ: Метрики -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 font-body md:max-w-5xl mx-auto">
+                    
+                    <!-- Metric 1 -->
+                    <div class="relative bg-white/5 backdrop-blur-md border border-white/10 p-5 md:p-10 rounded-xl md:rounded-[3rem] flex flex-col items-center md:items-start h-full text-center md:text-left">
+                        <div class="mb-0 md:mb-8 w-full">
+                            <div class="text-3xl md:text-5xl lg:text-6xl font-display font-extrabold mb-1 md:mb-2 tracking-tighter text-white">300+</div>
+                            <div class="text-[10px] md:text-[14px] font-medium uppercase mb-4 md:mb-0 mt-0 md:mt-2 text-primary md:text-slate-400">Успешных сделок</div>
+                        </div>
+                        <div class="hidden md:block h-[2px] bg-white/30 w-full mb-8"></div>
+                        <div class="w-full">
+                            <div class="hidden md:flex items-center gap-3 mb-4">
+                                <div class="w-8 h-8 rounded-xl bg-primary/20 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-current text-primary w-[1em] h-[1em] text-lg" aria-hidden="true"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 19.93V2.94l7 3.11v4.95c0 4.54-2.8 8.85-7 10.93zM16.5 9.5l-6 6-3.5-3.5 1.41-1.41L10.5 12.67l4.59-4.58z"/></svg>
+                                </div>
+                                <div class="text-lg font-display font-bold text-white tracking-tight uppercase">Стабильно</div>
+                            </div>
+                            <p class="text-slate-300 md:text-slate-400 leading-relaxed font-medium text-[11.22px] md:text-[13px]">Предсказуемые решения, соответствующие вашим запросам.</p>
+                        </div>
+                    </div>
+
+                    <!-- Metric 2 -->
+                    <div class="relative bg-white/5 backdrop-blur-md border border-white/10 p-5 md:p-10 rounded-xl md:rounded-[3rem] flex flex-col items-center md:items-start h-full text-center md:text-left">
+                        <div class="mb-0 md:mb-8 w-full">
+                            <div class="text-3xl md:text-5xl lg:text-6xl font-display font-extrabold mb-1 md:mb-2 tracking-tighter text-white">0</div>
+                            <div class="text-[10px] md:text-[14px] font-medium uppercase mb-4 md:mb-0 mt-0 md:mt-2 text-primary md:text-slate-400">Скрытых комиссий</div>
+                        </div>
+                        <div class="hidden md:block h-[2px] bg-white/30 w-full mb-8"></div>
+                        <div class="w-full">
+                            <div class="hidden md:flex items-center gap-3 mb-4">
+                                <div class="w-8 h-8 rounded-xl bg-primary/20 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-current text-primary w-[1em] h-[1em] text-lg" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                                </div>
+                                <div class="text-lg font-display font-bold text-white tracking-tight uppercase">Прозрачно</div>
+                            </div>
+                            <p class="text-[11.22px] md:text-[13px] text-slate-300 md:text-slate-400 leading-relaxed font-medium">Только фиксированные цены без&nbsp;дополнительных наценок.</p>
+                        </div>
+                    </div>
+
+                    <!-- Metric 3 -->
+                    <div class="relative bg-white/5 backdrop-blur-md border border-white/10 p-5 md:p-10 rounded-xl md:rounded-[3rem] flex flex-col items-center md:items-start h-full text-center md:text-left">
+                        <div class="mb-0 md:mb-8 w-full">
+                            <div class="text-3xl md:text-5xl lg:text-6xl font-display font-extrabold mb-1 md:mb-2 tracking-tighter text-white">100%</div>
+                            <div class="text-[10px] md:text-[14px] font-medium uppercase mb-4 md:mb-0 mt-0 md:mt-2 text-primary md:text-slate-400">Онлайн</div>
+                        </div>
+                        <div class="hidden md:block h-[2px] bg-white/30 w-full mb-8"></div>
+                        <div class="w-full">
+                            <div class="hidden md:flex items-center gap-3 mb-4">
+                                <div class="w-8 h-8 rounded-xl bg-primary/20 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-current text-primary w-[1em] h-[1em] text-lg" aria-hidden="true"><path d="M20 18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/></svg>
+                                </div>
+                                <div class="text-lg font-display font-bold text-white tracking-tight uppercase">Удобно</div>
+                            </div>
+                            <p class="text-slate-300 md:text-slate-400 leading-relaxed font-medium text-[11.22px] md:text-[13px]">Работаем оперативно, оказывая услуги в&nbsp;дистанционном формате.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- НИЖНИЙ РАЗДЕЛИТЕЛЬ -->
+                <div class="h-[1px] w-full bg-white/10 mt-12 lg:mt-16 mb-12 lg:mb-16"></div>
+
+                <!-- НИЖНЯЯ ЧАСТЬ: 2 белые карточки -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 font-body md:max-w-5xl mx-auto">
+                    
+                    <div class="bg-white border border-slate-100 section-radius p-6 md:p-8 shadow-sm flex flex-col md:flex-row items-center gap-3 md:gap-6 text-slate-900 text-center md:text-left">
+                        <div class="flex flex-col items-center justify-center shrink-0">
+                            <span class="text-[9px] font-display font-bold uppercase tracking-widest text-primary mb-0.5">до</span>
+                            <span class="text-5xl font-display font-black text-primary tracking-tighter leading-none">40%</span>
+                            <span class="text-[9px] font-display font-bold uppercase tracking-widest text-primary mt-1">быстрее</span>
+                        </div>
+                        <div class="flex flex-col items-center md:items-start w-full mt-1 md:mt-0">
+                            <div class="text-sm font-display font-extrabold uppercase text-slate-950 tracking-tight">Экономия времени</div>
+                            <p class="text-xs text-on-surface-variant font-medium mt-2 md:mt-1 leading-relaxed w-full">Минимизируем сорванные сделки, ускоряя подготовку и&nbsp;проведение проверок.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white border border-slate-100 section-radius p-6 md:p-8 shadow-sm flex flex-col md:flex-row items-center gap-3 md:gap-6 text-slate-900 text-center md:text-left">
+                        <div class="flex items-baseline justify-center gap-1.5 text-slate-900 font-display font-black tracking-tighter shrink-0">
+                            <span class="text-[15px] uppercase tracking-widest text-slate-400 font-bold ml-1">в</span>
+                            <span class="text-5xl">1.3</span>
+                            <span class="text-[15px] uppercase tracking-widest text-slate-400 font-bold ml-1">раза</span>
+                        </div>
+                        <div class="flex flex-col items-center md:items-start w-full mt-1 md:mt-0">
+                            <div class="text-sm font-display font-extrabold uppercase text-slate-950 tracking-tight">Снижение затрат</div>
+                            <p class="text-xs text-on-surface-variant font-medium mt-2 md:mt-1 leading-relaxed w-full">Вы тратите меньше на юристов и&nbsp;сторонние сервисы.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full flex justify-center items-center mt-12 lg:mt-16">
+                    <button onclick="openModal()" class="inline-flex items-center justify-center gap-2 px-7 py-4 lg:px-9 lg:py-4 rounded-full bg-primary text-white font-display text-xs lg:text-sm font-bold uppercase tracking-widest hover:scale-105 active:scale-95 shadow-lg shadow-primary/30 transition-all duration-300">
+    			<span>Начать сотрудничество</span>
+					</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    
+    <!-- ЕДИНЫЙ ФУТЕР -->
+    <footer class="w-full border-t border-slate-200 md:border-outline-variant/15 mt-auto bg-background-light md:bg-transparent">
+        <div class="flex flex-col md:flex-row justify-between items-center px-6 md:px-8 py-8 md:py-6 w-full max-w-[1920px] mx-auto gap-4 md:gap-0">
+            <div class="text-[9px] md:text-[10px] tracking-[0.2em] md:tracking-widest uppercase font-bold text-slate-400 md:text-on-surface-variant/60 font-display md:font-label text-center md:text-left">
+                <span class="block">© ПИВОТ БРОКЕР</span>
+                <span class="block mt-1">ИНФОРМАЦИЯ ИНФОРМАЦИОННО-СПРАВОЧНОГО ХАРАКТЕРА, НЕ ЯВЛЯЕТСЯ ПУБЛИЧНОЙ ОФЕРТОЙ</span>
+            </div>
+            <div class="flex items-center gap-6 md:gap-8 mt-2 md:mt-0">
+                <a class="text-[9px] md:text-[10px] tracking-[0.2em] md:tracking-widest uppercase font-bold text-slate-400 md:text-on-surface-variant/60 hover:text-primary transition-colors font-display md:font-label" href="about.html">О НАС</a>
+                <a class="text-[9px] md:text-[10px] tracking-[0.2em] md:tracking-widest uppercase font-bold text-slate-400 md:text-on-surface-variant/60 hover:text-primary transition-colors font-display md:font-label" href="#">КОНТАКТЫ</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Contact Modal -->
+    <div class="fixed inset-0 z-[200] items-center justify-center p-4 backdrop-blur-md bg-white/10 hidden" id="contact-modal-mobile">
+        <div class="absolute inset-0" onclick="closeMobileModal()"></div>
+        
+        <div class="bg-white/90 backdrop-blur-lg p-8 rounded-[48px] shadow-2xl max-w-sm w-full text-center border border-white/20 relative z-10">
+            <button class="absolute top-4 right-4 text-slate-400 hover:text-slate-900 transition-colors" onclick="closeMobileModal()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-[1em] h-[1em] fill-current text-2xl" aria-hidden="true"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+            </button>
+            <div class="space-y-6 mt-4">
+                <a class="flex items-center justify-center gap-3 p-4 bg-slate-900 text-white rounded-full font-display font-bold text-xs uppercase tracking-widest shadow-lg active:scale-95 transition-transform" href="https://telegram.me/PIVOTBROKER" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-[1em] h-[1em] fill-current text-lg" aria-hidden="true"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg> Telegram
+                </a>
+                <a class="flex items-center justify-center gap-3 p-4 bg-primary text-white rounded-full font-display font-bold text-xs uppercase tracking-widest shadow-lg active:scale-95 transition-transform" href="mailto:pivot@broker">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-[1em] h-[1em] fill-current text-lg" aria-hidden="true"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg> pivot@broker
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Desktop Contact Modal -->
+    <div class="fixed inset-0 z-[200] flex items-center justify-center p-4 hidden" id="contact-modal-desktop">
+        <div class="absolute inset-0 bg-slate-950/60 backdrop-blur-md" onclick="closeDesktopModal()"></div>
+        
+        <div class="relative bg-slate-950 text-white rounded-[3rem] w-full shadow-2xl border border-white/10 z-10 max-w-[320px] p-6">
+            <button class="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors z-20" onclick="closeDesktopModal()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-[1em] h-[1em] fill-current text-2xl" aria-hidden="true"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+            </button>
+            <div class="text-center space-y-8 mt-4">
+                <div class="flex flex-col gap-4 w-full">
+                    <a class="flex items-center justify-center gap-4 bg-white/10 hover:bg-white/20 text-white py-4 rounded-full font-display font-bold text-sm transition-all w-full uppercase tracking-widest" href="https://telegram.me/PIVOTBROKER" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-[1em] h-[1em] fill-current text-lg" aria-hidden="true"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg> TELEGRAM
+                    </a>
+                    <a class="flex items-center justify-center gap-4 bg-primary text-white py-4 rounded-full font-display font-bold text-sm hover:scale-105 transition-transform w-full uppercase tracking-widest" href="mailto:pivot@broker">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-[1em] h-[1em] fill-current text-lg" aria-hidden="true"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg> pivot@broker
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+    function toggleMenu() {
+        const mobileMenu = document.getElementById('mobile-menu');
+        if(mobileMenu) {
+            mobileMenu.classList.toggle('active');
+            document.body.classList.toggle('overflow-hidden');
+        }
+    }
+
+    function closeMobileNav() {
+        const mobileMenu = document.getElementById('mobile-menu');
+        if(mobileMenu) {
+            mobileMenu.classList.remove('active');
+            document.body.classList.remove('overflow-hidden'); 
+        }
+    }
+
+    function openMobileModal() {
+        const modal = document.getElementById('contact-modal-mobile');
+        if(modal) {
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.classList.add('overflow-hidden');
+        }
+    }
+
+    function closeMobileModal() {
+        const modal = document.getElementById('contact-modal-mobile');
+        if(modal) {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.classList.remove('overflow-hidden');
+        }
+    }
+
+    document.getElementById('contact-modal-mobile')?.addEventListener('click', function(e) {
+        if (e.target === this) closeMobileModal();
+    });
+
+    function openDesktopModal() {
+        const modal = document.getElementById('contact-modal-desktop');
+        if(modal) {
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.classList.add('overflow-hidden');
+        }
+    }
+
+    function closeDesktopModal() {
+        const modal = document.getElementById('contact-modal-desktop');
+        if(modal) {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.classList.remove('overflow-hidden');
+        }
+    }
+
+    function openModal() {
+        window.innerWidth < 768 ? openMobileModal() : openDesktopModal();
+    }
+    
+    function closeModal() {
+        closeMobileModal();
+        closeDesktopModal();
+    }
+    </script>
+</body>
+</html>

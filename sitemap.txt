@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://sitemaps.org">
+  <url>
+    <loc>https://pivot.broker</loc>
+  </url>
+  <url>
+    <loc>https://pivot.broker/about</loc>
+  </url>
+  <url>
+    <loc>https://pivot.broker/service-documents-sale</loc>
+  </url>
+  <url>
+    <loc>https://pivot.broker/service-kyc-check</loc>
+  </url>
+  <url>
+    <loc>https://pivot.broker/article-sale-taxes</loc>
+  </url>
+  <url>
+    <loc>https://pivot.broker/article-transfer-act</loc>
+  </url>
+</urlset>
